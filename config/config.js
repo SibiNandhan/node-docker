@@ -1,4 +1,4 @@
-require("dotenv").congif();
+require("dotenv").config();
 
 module.exports = {
   MONGO_IP: process.env.MONGOIP || "mongodb",
