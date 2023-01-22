@@ -1,3 +1,5 @@
+require("dotenv").congif();
+
 module.exports = {
   MONGO_IP: process.env.MONGOIP || "mongodb",
   MONGO_PORT: process.env.MONGO_PORT || 27017,

@@ -2,6 +2,8 @@ version: '3'
 services:
   nginx:
     image: nginx:stable-alpine
+    depends_on:
+      - node-app
     ports:
       - "4000:80"
     volumes:

@@ -16,7 +16,7 @@ services:
     environment:
       - NODE_ENV=development
     command: npm run dev
-  mongo:
+  mongodb:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=sibi
       - MONGO_INITDB_ROOT_PASSWORD=password
