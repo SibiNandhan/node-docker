@@ -47,7 +47,7 @@ app.use(
 //----------------------redis-------------------------------
 
 const PORT = process.env.PORT || 4000;
-const URL = `mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_IP}:${MONGO_PORT}/?authSource=admin`;
+const URL = `mongodb://sibi:password@${MONGO_IP}:${MONGO_PORT}/?authSource=admin`;
 
 mongoose
   .connect(URL, {
