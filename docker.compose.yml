@@ -8,8 +8,8 @@ services:
     build: .
     # ports:
     #   - "4000:4000"
-    env_file:
-      - ./.env
+    # env_file:
+    #   - ./.env
     depends_on:
       - mongodb
   mongodb:
