@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const morgan=require("morgan");
 const postRouter = require("./routes/postRoutes");
 const authRouter = require("./routes/userRoutes");
 const cors = require("cors");
@@ -17,6 +18,7 @@ const app = express();
 app.use(express.json());
 dotenv.config();
 
+app.use(morgan('tiny'));
 //  --------------redis --------------------------
 const session = require("express-session");
 let RedisStore = require("connect-redis")(session);
