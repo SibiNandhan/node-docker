@@ -14,9 +14,6 @@ services:
       - mongodb
   mongodb:
     image: mongo
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=sibi
-      - MONGO_INITDB_ROOT_PASSWORD=password
     volumes:
       - mongo-db:/data/db
   redis:
